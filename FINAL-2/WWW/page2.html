@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1//DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Purdue Point & Click</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<link href="css/style2.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		function show_rightpre()
+		{
+		document.getElementById('right-pre').style.display="flex";
+		}
+		
+		function hide_rightpre()
+		{
+		document.getElementById('right-pre').style.display="none";
+		}
+
+		function show_leftpre()
+		{
+		document.getElementById('left-pre').style.display="flex";
+		}
+		
+		function hide_leftpre()
+		{
+		document.getElementById('left-pre').style.display="none";
+		}
+		</script>
+		
+</head>
+
+<body>
+	<div id="page-container" >
+		<div class="backgrounds">
+			<div id="textbox"> 
+				<div class="typewriter">
+					<p><span class="type" style="--n:92">It's your first day of classes at Purdue University!
+						What route will you take to class? </span></p>
+				</div>
+				<a href="gameovertower.html" div id="left-button" onMouseOver="show_leftpre()" onMouseOut="hide_leftpre()">
+					<h1>Under the bell tower</h1>
+				</a>
+				<a href="page3.html" div id="right-button" onMouseOver="show_rightpre()" onMouseOut="hide_rightpre()">
+					<h1>Biking in the bike lanes</h1>
+				</a>
+				
+			</div>
+			<div id="left-pre">
+				<div class="pre-images">
+					<img src="images/tower.jpg" alt="tower"/>
+				</div>
+			</div>
+			<div id="right-pre">
+				<div id="pre-images">
+				<img src="images/bike.jpg" alt="bike"/>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+</body>
+</html>

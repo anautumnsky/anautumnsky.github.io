@@ -1,0 +1,89 @@
+#page-container{
+	width: 100%;
+    min-height: 100%;
+	background-color:wheat;
+}
+body { 
+	background: url("../images/start_bg.png");
+	background-repeat: no-repeat;
+background-size: cover;
+    background-attachment: fixed;
+	display:inline-block;
+	/*
+
+
+	width: 100%;
+	height: auto;
+	*/
+}
+
+.backgrounds img{
+	max-width: 100%;
+    }
+ 
+
+ #top-button {
+	border-radius: 15px;
+    max-width: 15%;
+    max-height: 10%;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#top-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+    transform-origin: center center;
+    background-color: rgb(12, 146, 28);
+	}
+
+#bottom-button {
+	border-radius: 15px;
+    max-width: 20%;
+    max-height: 10%;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#bottom-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+	transform-origin: center center;
+	background-color: rgb(12, 146, 28);
+	}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	text-align:center;
+	font-weight:bold;
+	color:#91b899;
+	font-family: "ＭＳ Ｐゴシック";
+
+}
+	
+a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/mobile_start_bg.png");
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}

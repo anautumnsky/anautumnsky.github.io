@@ -1,0 +1,47 @@
+#bg{
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url("../images/about.png");
+  background-size: cover;
+    background-attachment: fixed;
+}
+#team {
+    font-family: "ＭＳ Ｐゴシック" ;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: wheat;
+}
+
+#team td, #team th {
+    border: 1px solid rgb(12,146,28);
+    padding: 8px;
+}
+
+#team tr:hover {background-color: #dcd2aa;}
+
+#teams th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+h1{
+    margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	text-align:center;
+	font-weight:bold;
+	color:#5e3023;
+	font-family: "ＭＳ Ｐゴシック";
+    margin-bottom: 15px;
+}
+td {
+    color:#5e3023;
+}
+th {
+    color:#5e3023;
+}

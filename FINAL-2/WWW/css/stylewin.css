@@ -1,0 +1,166 @@
+#page-container{
+	width: 100%;
+    height: auto;
+	background-color:wheat;
+    display: flex;
+}
+body { 
+	background: url("../images/sleeptime.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+}
+.backgrounds img{
+	position:relative;
+	display:inline-block;
+		width: 100%;
+        height: auto;
+}
+
+#top-button {
+	border-radius: 15px;
+    width: 12%;
+    max-height: 10%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#top-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+    transform-origin: center center;
+    background-color: rgb(12, 146, 28);
+	}
+
+#mid-button {
+	border-radius: 15px;
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#mid-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+	transform-origin: center center;
+	background-color: rgb(12, 146, 28);
+	}
+
+#bottom-button {
+    border-radius: 15px;
+    width: 12%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#bottom-button:hover {
+    transform: scale(1.1) translate(-45%, -45%);
+    transform-origin: center center;
+    background-color: rgb(12, 146, 28);
+    }
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	text-align:center;
+	font-weight:bold;
+	color:DarkSeaGreen;
+	font-family: "ＭＳ Ｐゴシック";
+}
+	
+a {
+    text-decoration: none;
+}
+
+#textbox {
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;/*
+    height: 20%;
+    left: 30%;
+    bottom: 80%; */
+    position: absolute;
+    background-color: rgb(202, 197, 171);
+    padding: 20px;
+}
+
+p{
+    font-size: 70px;
+    color: #5e3023;
+    font-family: "ＭＳ Ｐゴシック";
+}
+
+.typewriter {
+    text-align: center;/* 
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: .1em;  
+    color: antiquewhite;
+    
+    animation: 
+        typing 3.5s steps(40, end);
+    }
+    
+
+    @keyframes typing {
+    from { width: 0; text-align: center;}
+    to { width: calc(100% - .15em); text-align: center;}
+    }
+*/
+}
+#reasonbox{
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    position: absolute;
+    top: 60%; /* Adjust this value to position the text vertically */
+    left: 50%; /* Adjust this value to position the text horizontally */
+    z-index: 1; /* Ensure the text appears above the image */
+    width: auto;
+    text-align: center center;
+}
+/*
+h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    color:rgb(12, 146, 28);
+    font-family: "ＭＳ Ｐゴシック";
+    position: absolute;
+    top:%
+}
+*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/mobile_sleeptime.png");
+        background-repeat: no-repeat;
+    }
+    p {
+        font-size: 2.6em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}

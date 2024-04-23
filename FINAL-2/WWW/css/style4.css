@@ -1,0 +1,166 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparency */
+    }
+    to {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
+body { 
+	background: url("../images/map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+}
+#page-container{
+	width: 100%;
+    height: auto;
+	background-color:wheat;
+}
+
+.backgrounds img{
+	position:relative;
+	display:inline-block;
+    width: 100%;
+}
+
+#textbox {
+    display: inline-block;
+    border-radius: 15px;
+    width: 85%;
+    height: 20%;
+    left: 50%;
+    top: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    background-color: rgb(202, 197, 171);
+    padding: 20px;
+}
+/*
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: .1em;   
+    animation: 
+        typing 3.5s steps(40, end);
+    }
+    
+    @keyframes typing {
+    from { width: 0 }
+    to { width: calc(100% - .15em) }
+    }
+*/
+ .type {
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+}
+
+p{
+    padding: 15px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: "ＭＳ Ｐゴシック";
+    color: #5e3023;
+}
+
+#left-button {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+	border-radius: 15px;
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    left: 25%;
+    top: 65%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#left-button:hover{
+	transform: scale(1.1) translate(-45%, -45%);
+    transform-origin: center center;
+    background-color: rgb(12, 146, 28);
+}
+
+#right-button{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+	border-radius: 15px;
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    left: 75%;
+    top: 65%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#right-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+	transform-origin: center center;
+	background-color: rgb(12, 146, 28);
+	
+	}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: "ＭＳ Ｐゴシック";
+    color: blanchedalmond;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pre-images{
+    img{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    /*text overflows*/
+    h1 {
+        font-size: 1em;
+    }
+    #left-button {
+        top: 140%;
+    }
+    #right-button {
+        top: 140%;
+    }
+    #left-pre {
+        top: 80%
+    }
+    #right-pre {
+        top: 80%
+    }
+}
+@media only screen and (max-width: 768px) {
+    /*phone for now*/
+	body {
+    	background-image: url("../images/mobile_map.png");
+	    background-repeat: no-repeat;
+    }
+
+}

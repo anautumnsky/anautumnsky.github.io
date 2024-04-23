@@ -1,0 +1,141 @@
+#page-container{
+	width: 100%;
+    height: auto;
+	/*background-color:wheat; */
+    display: flex;
+    justify-content: flex-end; /* Align content to the end (right) of the container */
+    align-items: center;
+}
+body { 
+	background: url("../images/pete.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+
+}
+.backgrounds img{
+	position:relative;
+	display:inline-block;
+		width: 100%;
+        height: auto;
+}
+
+ #top-button {
+    float: right;
+	border-radius: 15px;
+    max-width: 15%;
+    max-height: 10%;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    text-align: center;
+    background-color: rgb(10, 100, 20);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#top-button:hover {
+	transform: scale(1.1) translate(-45%, -45%);
+    transform-origin: center center;
+    background-color: rgb(12, 146, 28);
+	}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	text-align:center;
+	font-weight:bold;
+	color:DarkSeaGreen;
+	font-family: "ＭＳ Ｐゴシック";
+}
+	
+a {
+    text-decoration: none;
+}
+
+
+#reasonbox{
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    width:25%;
+    text-align: center;
+}
+#textbox {
+    /*float: left; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    height: 50%;
+    width: 60%;
+    top:10%;
+    position: relative;
+    background-color: rgb(202, 197, 171);
+    
+}
+p{
+    font-size: 70px;
+    color: #5e3023;
+    font-family: "ＭＳ Ｐゴシック";
+}
+/* 
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: .1em; 
+    color: antiquewhite;
+    animation: 
+        typing 3.5s steps(40, end);
+    }
+    
+    
+    @keyframes typing {
+    from { width: 0 }
+    to { width: calc(100% - .15em) }
+    }
+ */
+
+
+h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    color:rgb(12, 146, 28);
+    font-family: "ＭＳ Ｐゴシック";
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/mobile_pete.png");
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        color:antiquewhite; /*boo*/
+    }
+    #reasonbox{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        width:50%;
+        width: 50%;
+        text-align: center;
+    }
+    #textbox {
+        /*float: left; */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        height: 50%;
+        width: 100%;
+        top:10%;
+        position: relative;
+        background-color: rgb(202, 197, 171);
+    }
+}

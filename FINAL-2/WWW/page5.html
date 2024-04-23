@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1//DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Purdue Point & Click</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<link href="css/style5.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+		function show_rightpre()
+		{
+		document.getElementById('right-pre').style.display="flex";
+		}
+		
+		function hide_rightpre()
+		{
+		document.getElementById('right-pre').style.display="none";
+		}
+
+		function show_leftpre()
+		{
+		document.getElementById('left-pre').style.display="flex";
+		}
+		
+		function hide_leftpre()
+		{
+		document.getElementById('left-pre').style.display="none";
+		}
+		</script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div class="backgrounds">
+			<div id="textbox"> 
+				<div class="typewriter">
+					<p><span class="type" style="--n:125">The food was yummy and you get to your next class on time! After that, you're done with class, so what do you want to do now?</span> </p>
+				</div>
+                <div id="compbox">
+				<a href="win.html" id="computer" onMouseOver="show_leftpre()" onMouseOut="hide_leftpre()">
+					<img src="images/pixelarthw.png" /> </a> </div>
+                <div id="clubbox">
+				<a href="win.html" id="fun" onMouseOver="show_rightpre()" onMouseOut="hide_rightpre()">
+					<img src="images/pixelartarrow.png"/> </a> </div>
+            </div>
+
+            <div id="left-pre">
+				<h1>Get studying... </h1>
+					
+				</div>
+			</div>
+			<div id="right-pre">
+				<h1>Go join a club! </h1>
+				</div>
+			</div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

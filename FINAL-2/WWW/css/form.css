@@ -1,0 +1,23 @@
+.red{
+    color: rgb(212, 0, 0);
+}
+
+h2{
+    font-family: "ＭＳ Ｐゴシック" ;
+    color:#5e3023;
+}
+label{
+    font-family: "ＭＳ Ｐゴシック" ;
+    color:#5e3023;
+}
+
+body{
+    font-family: "ＭＳ Ｐゴシック" ;
+    background-image: url("../images/form.png");
+background-size: cover;
+    background-attachment: fixed;
+}
+
+form{
+    padding: 2px;
+}

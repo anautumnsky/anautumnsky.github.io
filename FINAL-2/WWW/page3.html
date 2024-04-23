@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1//DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Purdue Point & Click</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<link href="css/style3.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+		function show_rightpre()
+		{
+		document.getElementById('right-pre').style.display="flex";
+		}
+		
+		function hide_rightpre()
+		{
+		document.getElementById('right-pre').style.display="none";
+		}
+
+		function show_leftpre()
+		{
+		document.getElementById('left-pre').style.display="flex";
+		}
+		
+		function hide_leftpre()
+		{
+		document.getElementById('left-pre').style.display="none";
+		}
+		</script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div class="backgrounds">
+			<div id="textbox"> 
+				<div class="typewriter">
+					<p><span class="type" style="--n:75"> Thank you for biking safely! But now you're running behind. What do you do?</span> </p>
+				</div>
+                <div id="walkbox">
+				<a href="gameoverbike.html" id="walker" onMouseOver="show_leftpre()" onMouseOut="hide_leftpre()">
+					<img src="images/pixelartperson.png" /> </a> </div>
+                <div id="bikebox">
+				<a href="page4.html" id="bikebg" onMouseOver="show_rightpre()" onMouseOut="hide_rightpre()">
+					<img src="images/pixelartbike.png" /> </a> </div>
+            </div>
+
+            <div id="left-pre">
+				<h1>Get to class, now! </h1>
+					
+				</div>
+			</div>
+			<div id="right-pre">
+				<h1>Lock your bike first! </h1>
+				</div>
+			</div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

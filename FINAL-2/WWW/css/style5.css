@@ -1,0 +1,193 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparency */
+    }
+    to {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
+
+#page-container{
+	width: 100%;
+    height: auto;
+	background-color:wheat;
+}
+body { 
+	background: url("../images/reroom.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+}
+.backgrounds img{
+	position:relative;
+	display:inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#textbox {
+    display: inline-block;
+    border-radius: 15px;
+    width: 85%;
+    height: 20%;
+    left: 50%;
+    top: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    background-color: rgb(202, 197, 171);
+    padding: 20px;
+}
+/*
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .1em; 
+    animation: 
+        typing 3.5s steps(40, end);
+    }
+    
+.typewriter2 {
+      overflow: hidden;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 3.5s steps(40, end) forwards;
+      animation-delay: 3s;
+    }
+
+    @keyframes typing {
+    from { width: 0 }
+    to { width: calc(100% - .15em) }
+    }
+*/
+.type {
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+}
+p{
+    padding: 15px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: "ＭＳ Ｐゴシック";
+    color: #5e3023;
+}
+
+a {
+    text-decoration: none;
+}
+
+#clubbox{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 15%;
+    height: auto;
+    position: relative;
+    float: right;
+    right: 10%;
+    top: 180%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#clubbox:hover{
+    filter: brightness(130%);
+    transform: scale(1.1) translate(-45%, -45%);
+	transform-origin: center center;
+}
+
+#compbox{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    width: 25%;
+    position: relative;
+    float: left;
+    left: 35%;
+    top: 240%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#compbox:hover{
+    filter: brightness(130%);
+    transform: scale(1.1) translate(-45%, -45%);
+	transform-origin: center center;
+}
+
+#left-pre{
+    display: none;
+    border-radius: 10px;
+    width: auto;
+    left: 37%;
+    top: 47%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    background-color: #D2D8B3;
+    padding: 20px;
+}
+
+#right-pre{
+    display: none;
+    border-radius: 10px;
+    width: auto;
+    right: 15%;
+    top: 40%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    background-color: #D2D8B3;
+    padding: 20px;
+
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "ＭＳ Ｐゴシック";
+    color: #5E3023;
+}
+@media only screen and (max-width: 1000px) {
+#right-pre{
+    display: none;
+    border-radius: 10px;
+    width: auto;
+    right: 5%;
+    top: 47%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    background-color: #D2D8B3;
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 768px) {
+    /*phone for now*/
+	body {
+    	background-image: url("../images/mobile_bedroom.png");
+	    background-repeat: no-repeat;
+    }
+    #clubbox{
+        width: 15%;
+        height: auto;
+        position: relative;
+        float: right;
+        right: 10%;
+        top: 240%;
+        transform: translate(-50%, -50%);
+        transform-origin: center center;
+    }
+}
