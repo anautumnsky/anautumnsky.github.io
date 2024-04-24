@@ -154,7 +154,7 @@ h1{
     color: #5E3023;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     /*phone for now*/
 	body {
     	background-image: url("../images/mobile_fountain.png");
