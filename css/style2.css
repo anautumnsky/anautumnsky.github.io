@@ -184,7 +184,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     /*phone for now*/
 	body {
     	background-image: url("../images/mobile_bed.gif");

@@ -78,7 +78,7 @@ h1 {
 a {
     text-decoration: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     body {
         background-image: url("../images/mobile_start_bg.png");
         background-repeat: no-repeat;
